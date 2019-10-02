@@ -1,5 +1,5 @@
 # 7.动态规划
-1.0-1背包问题
+## 1. 0-1背包问题
 
 `问题`：
 容量为4的背包能装最值钱的东西是什么？总价多少？
@@ -35,7 +35,8 @@ def knapsack_dynamic(w, p, n, m, x):
     for i in range(1, n + 1):       # 物品一件件来
         for j in range(1, m + 1):   # j为子背包的载重量，寻找能够承载物品的子背包
             if (j >= w[i]):         # 当物品的重量小于背包能够承受的载重量的时候，才考虑能不能放进去
-                optp[i][j] = max(optp[i - 1][j], optp[i - 1][j - w[i]] + p[i])    # optp[i - 1][j]是上一个单元的值， optp[i - 1][j - w[i]]为剩余空间的价值
+                optp[i][j] = max(optp[i - 1][j], optp[i - 1][j - w[i]] + p[i])   
+                # optp[i - 1][j]是上一个单元的值， optp[i - 1][j - w[i]]为剩余空间的价值
             else:
                 optp[i][j] = optp[i - 1][j]
 
@@ -57,3 +58,6 @@ print ('物品的索引：',x)
 #物品的索引： [4, 3]
 
 ```
+## 2.todo
+在线编程——动态规划常见的面试问题总结（Python）
+https://blog.csdn.net/zichen_ziqi/article/details/82184495
