@@ -83,11 +83,14 @@ print ('物品的索引：',x)
 输出
 598
 ```
+### 原理：
+1、 先找到最大回文子序列的和
+
+2、 然后 2*sum - 最大回文子序列的和
+### 代码：
+
 ```py
 """
- 先找到最大回文子序列的和，
- 然后 2*sum - 最大回文子序列的和
-
  * Dynamic Programming
  *
  * State:
@@ -126,6 +129,7 @@ for i in range(n - 1, -1, -1):
 
 print(s * 2 - dp[0][n - 1])
 ```
+参考：https://www.nowcoder.com/questionTerminal/00fccaa8e30d414ab86b9bb229bd8e68?f=discussion
 
 ## 3.todo
 在线编程——动态规划常见的面试问题总结（Python）
