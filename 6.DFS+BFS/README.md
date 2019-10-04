@@ -1,2 +1,100 @@
 # 6.DFS+BFS
+## 题目：
+
+给定一个由 '1'（陆地）和 '0'（水）组成的的二维网格，计算岛屿的数量。一个岛被水包围，并且它是通过水平方向或垂直方向上相邻的陆地连接而成的。你可以假设网格的四个边均被水包围。
+
+示例 1:
+```
+输入:
+11110
+11010
+11000
+00000
+
+输出: `
+```
+示例 2:
+```
+输入:
+11000
+11000
+00100
+00011
+
+输出: 3
+```
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/number-of-islands
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+
+## 解析：
+
 https://leetcode-cn.com/problems/number-of-islands/solution/dfs-bfs-bing-cha-ji-python-dai-ma-java-dai-ma-by-l/
+
+## 代码：
+```py
+# # 法1.DFS
+class Solution:
+    directions = [(-1, 0), (0, -1), (1, 0), (0, 1)]
+
+    def numIslands(self, grid: List[List[str]]) -> int:
+        
+        m = len(grid)
+        if m == 0:
+            return 0
+        n = len(grid[0])
+        marked = [[False for _ in range(n)] for _ in range(m)]
+        count = 0
+        for i in range(m):
+            for j in range(n):
+                if not marked[i][j] and grid[i][j] == "1":
+                    count += 1
+                    self.dfs(grid, i, j, m, n, marked)
+        return count 
+    
+    def dfs(self, grid, i, j, m, n, marked):
+        marked[i][j] = True
+        
+        for direction in directions:
+            new_i = i + direction[0]
+            new_j = j + direction[1]
+            if 0 <= new_i < m and 0 <= new_j < n and not marked[new_i][new_j] and grid[new_i][new_j] == "1":
+                self.dfs(grid, new_i, new_j, m, n, marked)
+            
+# # 法2.BFS
+
+class Solution:
+    directions = [(-1, 0), (0, -1), (1, 0), (0, 1)]
+
+    def numIslands(self, grid: List[List[str]]) -> int:
+        m = len(grid)
+        if m == 0:
+            return 0
+
+        n = len(grid[0])
+        
+        marked = [[False for _ in range(n)] for _ in range(m)]
+        count = 0
+
+        for i in range(m):
+            for j in range(n):
+                if not marked[i][j] and grid[i][j] == '1':
+                    count += 1
+        
+                    queue = []
+                    queue.append((i, j))
+                    marked[i][j] = True
+                    
+                    while queue:
+                        cur_x, cur_y = queue.pop(0) 
+                    
+                        for direction in self.directions:
+                            new_i = cur_x + direction[0]
+                            new_j = cur_y + direction[1]
+                        
+                            if 0 <= new_i < m and 0 <= new_j < n and not marked[new_i][new_j] and grid[new_i][new_j] == '1':
+                                queue.append((new_i, new_j))
+                                marked[new_i][new_j] = True
+        return count
+```
