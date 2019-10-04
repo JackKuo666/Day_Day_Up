@@ -59,7 +59,8 @@ class Solution:
         for direction in directions:
             new_i = i + direction[0]
             new_j = j + direction[1]
-            if 0 <= new_i < m and 0 <= new_j < n and not marked[new_i][new_j] and grid[new_i][new_j] == "1":
+            if 0 <= new_i < m and 0 <= new_j < n and
+            not marked[new_i][new_j] and grid[new_i][new_j] == "1":
                 self.dfs(grid, new_i, new_j, m, n, marked)
             
 # # 法2.BFS
@@ -93,7 +94,8 @@ class Solution:
                             new_i = cur_x + direction[0]
                             new_j = cur_y + direction[1]
                         
-                            if 0 <= new_i < m and 0 <= new_j < n and not marked[new_i][new_j] and grid[new_i][new_j] == '1':
+                            if 0 <= new_i < m and 0 <= new_j < n and 
+                            not marked[new_i][new_j] and grid[new_i][new_j] == '1':
                                 queue.append((new_i, new_j))
                                 marked[new_i][new_j] = True
         return count
