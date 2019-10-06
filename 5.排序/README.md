@@ -172,14 +172,31 @@ print(merge_sort(a_list))
 https://www.jianshu.com/p/d174f1862601
 https://www.runoob.com/python3/python-heap-sort.html
 """
+## 一、大顶堆
+
+# 2.动态规划构建大顶堆
+def heap_build_2(self, a_list, n, i):
+    temp = a_list[i]
+    j = i*2 + 1
+    while j < n:
+        if j+1 < n and a_list[j+1] > a_list[j]: # 第二个改为 < 就是小顶堆       
+            j += 1
+        if a_list[j] < a_list[i]:  # 改为 > 就是小顶堆
+            break
+        a_list[i] = a_list[j]
+        i = j
+        j = i*2 + 1
+    a_list[i] = temp
+
+# 1.递归方式构建大顶堆 
 def heap_build(a_list, n, i):
     largest = i
     l = 2 * i + 1
     r = 2 * i + 2
 
-    if l < n and a_list[l] > a_list[largest]:
+    if l < n and a_list[l] > a_list[largest]:  # 第二个改为 < 就是小顶堆 
         largest = l
-    if r < n and a_list[r] > a_list[largest]:
+    if r < n and a_list[r] > a_list[largest]:  # 第二个改为 < 就是小顶堆 
         largest = r
 
     if largest != i:
@@ -206,8 +223,6 @@ def heap_sort(a_list):
 
 a_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 print(heap_sort(a_list))
-
-
 
 
 """
