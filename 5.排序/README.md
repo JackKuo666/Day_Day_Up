@@ -1,4 +1,7 @@
 # 5.排序算法小结
+![1.jpg](1.jpg)
+![2.jpg](2.jpg)
+
 ### 六大排序算法：https://github.com/JackKuo666/Data_Structure_with_Python
 1.[冒泡排序](https://github.com/JackKuo666/Data_Structure_with_Python/blob/master/5.1%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F.py)
 
