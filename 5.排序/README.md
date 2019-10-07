@@ -42,7 +42,7 @@ https://www.runoob.com/python3/python-topological-sorting.html
 
 
 
-### 3.+
+### todo: 整理成如：https://blog.csdn.net/weixin_37251044/article/details/102308752 形式
 
 ## 9大排序算法
 ```py
