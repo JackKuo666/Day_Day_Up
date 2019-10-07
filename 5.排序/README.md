@@ -1,7 +1,45 @@
 # 5.排序算法小结
-9大排序算法：https://github.com/JackKuo666/Data_Structure_with_Python
+### 六大排序算法：https://github.com/JackKuo666/Data_Structure_with_Python
+1.[冒泡排序](https://github.com/JackKuo666/Data_Structure_with_Python/blob/master/5.1%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F.py)
+
+2.[选择排序](https://github.com/JackKuo666/Data_Structure_with_Python/blob/master/5.2%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F.py)
+
+3.[插入排序](https://github.com/JackKuo666/Data_Structure_with_Python/blob/master/5.3%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F.py)
+
+4.[快速排序](https://github.com/JackKuo666/Data_Structure_with_Python/blob/master/5.4%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.py)
+
+5.[希尔排序](https://github.com/JackKuo666/Data_Structure_with_Python/blob/master/5.5%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F.py)
+
+6.[归并排序](https://github.com/JackKuo666/Data_Structure_with_Python/blob/master/5.6.%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F.py)
+
+7.堆排序
+
+https://www.jianshu.com/p/d174f1862601
+
+https://www.runoob.com/python3/python-heap-sort.html
+
+8.[计数排序](https://www.cnblogs.com/golzn2018/p/9594293.html)
+
+9.桶排序
+
+https://www.jianshu.com/p/bbbab7fa77a2
+
+10.基数排序
+
+https://www.jianshu.com/p/bbbab7fa77a2
+
+11.图：拓扑排序
+
+11.1. 入度为0法
+https://blog.csdn.net/lanchunhui/article/details/50957608
+
+11.2.递归+类
+https://www.runoob.com/python3/python-topological-sorting.html
 
 
+
+
+### 3.+
 
 ## 9大排序算法
 ```py
