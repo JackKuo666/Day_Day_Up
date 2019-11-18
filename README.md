@@ -11,3 +11,6 @@ https://www.jianshu.com/p/b0aa00f7095e
 https://mp.weixin.qq.com/s/nqkIKtkquV1bNbR5LeBihQ?from=singlemessage&scene=1&subscene=10000&clicktime=1569814046&enterid=1569814046
 ### 4.百度内部培训资料PPT：数据分析的道与术
 https://www.itcodemonkey.com/article/7581.html
+## 2019-11-18
+### 1.RASA:https://blog.chatie.io/rasa/
+### 2.机器学习中的常识性问题:https://yuanxiaosc.github.io/2019/08/16/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%AF%86%E6%80%A7%E9%97%AE%E9%A2%98/#more
