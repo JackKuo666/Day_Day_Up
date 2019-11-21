@@ -16,3 +16,8 @@ https://www.itcodemonkey.com/article/7581.html
 ### 2.机器学习中的常识性问题:https://yuanxiaosc.github.io/2019/08/16/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%AF%86%E6%80%A7%E9%97%AE%E9%A2%98/#more
 ### 3.智能客服FAQ问答任务的技术选型探讨
 https://zhuanlan.zhihu.com/p/50799128
+## 2019-11-21
+### 1.模型优化之Layer Normalization
+https://zhuanlan.zhihu.com/p/54530247
+### 2.字符串匹配的KMP算法
+http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html
